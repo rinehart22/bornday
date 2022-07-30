@@ -60,9 +60,10 @@ pipeline {
           ./standup_testing_environment.sh # Name this whatever you'd like
           python -m unittest discover -s tests/integration
         """
-      }
-    }
-  }  
+       }
+     }
+   }
+    
   post {
     failure {
       script {
@@ -72,4 +73,4 @@ pipeline {
       }
     }
   }
-}
+
