@@ -18,8 +18,8 @@ pipeline {
         checkout scm
       }
     }
-  }
-    stage('Setup') { // Install any dependencies you need to perform testing
+  
+   
       steps {
         script {
           sh """
@@ -27,7 +27,8 @@ pipeline {
           """
         }
       }
-    }
+  }
+    
 //     stage('Linting') { // Run pylint against your code
 //       steps {
 //         script {
