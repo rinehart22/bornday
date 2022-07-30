@@ -18,16 +18,17 @@ pipeline {
         checkout scm
       }
     }
+  }
   
    
-      steps {
-        script {
-          sh """
-          pip install -r requirements.txt
-          """
-        }
-      }
-  }
+//       steps {
+//         script {
+//           sh """
+//           pip install -r requirements.txt
+//           """
+//         }
+//       }
+//   }
     
 //     stage('Linting') { // Run pylint against your code
 //       steps {
