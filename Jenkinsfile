@@ -28,15 +28,15 @@ pipeline {
         }
       }
     }
-    stage('Linting') { // Run pylint against your code
-      steps {
-        script {
-          sh """
-          pylint **/*.py
-          """
-        }
-      }
-    }
+//     stage('Linting') { // Run pylint against your code
+//       steps {
+//         script {
+//           sh """
+//           pylint **/*.py
+//           """
+//         }
+//       }
+//     }
     stage('Unit Testing') { // Perform unit testing
       steps {
         script {
