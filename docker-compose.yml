@@ -1,0 +1,9 @@
+version: '3'
+services:
+  webyy:
+    build:
+      context: .
+    command: sh -c 'python manage.py makemigrations && python manage.py migrate && exec gunicorn pro.wsgi:application --workers=4 --bind 0.0.0.0:9000'
+   
+    ports:
+      - '9000:9000'
