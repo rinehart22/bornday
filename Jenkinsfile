@@ -18,6 +18,7 @@ pipeline {
         checkout scm
       }
     }
+  }
     stage('Setup') { // Install any dependencies you need to perform testing
       steps {
         script {
